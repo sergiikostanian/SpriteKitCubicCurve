@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		82E710222689D46B00E5FE8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E710212689D46B00E5FE8E /* AppDelegate.swift */; };
-		82E710242689D46B00E5FE8E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 82E710232689D46B00E5FE8E /* GameScene.sks */; };
-		82E710262689D46B00E5FE8E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 82E710252689D46B00E5FE8E /* Actions.sks */; };
 		82E710282689D46B00E5FE8E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E710272689D46B00E5FE8E /* GameScene.swift */; };
 		82E7102A2689D46B00E5FE8E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E710292689D46B00E5FE8E /* GameViewController.swift */; };
 		82E7102D2689D46B00E5FE8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E7102B2689D46B00E5FE8E /* Main.storyboard */; };
 		82E7102F2689D46D00E5FE8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82E7102E2689D46D00E5FE8E /* Assets.xcassets */; };
+		82E710392689D85800E5FE8E /* UnitBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E710372689D85800E5FE8E /* UnitBezier.swift */; };
+		82E7103A2689D85800E5FE8E /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E710382689D85800E5FE8E /* TimingFunction.swift */; };
+		82E7103D2689D8BD00E5FE8E /* SKAction+CustomTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7103C2689D8BD00E5FE8E /* SKAction+CustomTiming.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82E7101E2689D46B00E5FE8E /* CubicCurveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubicCurveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E710212689D46B00E5FE8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82E710232689D46B00E5FE8E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		82E710252689D46B00E5FE8E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		82E710272689D46B00E5FE8E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		82E710292689D46B00E5FE8E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		82E7102C2689D46B00E5FE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82E7102E2689D46D00E5FE8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82E710302689D46D00E5FE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82E710372689D85800E5FE8E /* UnitBezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitBezier.swift; sourceTree = "<group>"; };
+		82E710382689D85800E5FE8E /* TimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
+		82E7103C2689D8BD00E5FE8E /* SKAction+CustomTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKAction+CustomTiming.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,8 @@
 		82E710202689D46B00E5FE8E /* CubicCurveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				82E710362689D80100E5FE8E /* CustomTiming */,
 				82E710212689D46B00E5FE8E /* AppDelegate.swift */,
-				82E710232689D46B00E5FE8E /* GameScene.sks */,
-				82E710252689D46B00E5FE8E /* Actions.sks */,
 				82E710272689D46B00E5FE8E /* GameScene.swift */,
 				82E710292689D46B00E5FE8E /* GameViewController.swift */,
 				82E7102B2689D46B00E5FE8E /* Main.storyboard */,
@@ -68,6 +69,16 @@
 				82E710302689D46D00E5FE8E /* Info.plist */,
 			);
 			path = CubicCurveDemo;
+			sourceTree = "<group>";
+		};
+		82E710362689D80100E5FE8E /* CustomTiming */ = {
+			isa = PBXGroup;
+			children = (
+				82E710382689D85800E5FE8E /* TimingFunction.swift */,
+				82E710372689D85800E5FE8E /* UnitBezier.swift */,
+				82E7103C2689D8BD00E5FE8E /* SKAction+CustomTiming.swift */,
+			);
+			path = CustomTiming;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E7102D2689D46B00E5FE8E /* Main.storyboard in Resources */,
-				82E710242689D46B00E5FE8E /* GameScene.sks in Resources */,
 				82E7102F2689D46D00E5FE8E /* Assets.xcassets in Resources */,
-				82E710262689D46B00E5FE8E /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E7103A2689D85800E5FE8E /* TimingFunction.swift in Sources */,
+				82E710392689D85800E5FE8E /* UnitBezier.swift in Sources */,
 				82E710282689D46B00E5FE8E /* GameScene.swift in Sources */,
 				82E7102A2689D46B00E5FE8E /* GameViewController.swift in Sources */,
+				82E7103D2689D8BD00E5FE8E /* SKAction+CustomTiming.swift in Sources */,
 				82E710222689D46B00E5FE8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CubicCurveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CubicCurveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

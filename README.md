@@ -1,4 +1,4 @@
-# SpriteKitCubicCurve
+# SpriteKit Cubic Curve
 
 It's an example project that explains how to use custom cubic Bezier timing curve for SpriteKit actions.
 
